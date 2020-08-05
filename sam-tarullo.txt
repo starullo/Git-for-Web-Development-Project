@@ -138,7 +138,22 @@ Link to finished codepen: https://codepen.io/starullo/pen/eYZYYyo?editors=1100
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+    Block elements starts on a new line and take up the full width available. Inline elements don't start
+    on a new line and only take up as much room as necessary 
+
     2. What happens when an element is positioned absolutely? 
+    It's taken out of the normal flow of the document, and is positioned relative to the nearest positioned element that comes 
+    before it.
+
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    display: inline-block;
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    BLOCK- div, p, h1
+    INLINE- img, span, i 
+    INLINE BLOCK- button
+
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? -->
+    The box model is a set of layers that wrap around html elements. Each layer (padding, border, margin) can be adjusted in order to set the look and size of the element.
+    By default, when you set the width/height of an element the browser will add padding and border to the specified width/height. So sometimes the element will appear 
+    to be bigger than expected. You could add the box-sizing property to the element, with a value of border-box to make sure the width/height of the element is actually the one given.
