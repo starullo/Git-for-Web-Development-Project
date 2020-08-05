@@ -1,0 +1,159 @@
+Link to finished codepen: https://codepen.io/starullo/pen/eYZYYyo?editors=1100
+
+
+<!--
+    1. What is Semantic HTML? 
+    HTML markup that is meant to add semantic meaning to elements. When you 
+    add semantic HTML, you may not be able to see the difference on a screen,
+    but it adds meaning to each element.
+
+    2. What is HTML used for? 
+    For the organization, content,and structure of web pages.
+
+    3. What is an attribute and where do we put it?
+    Attributes provide additional information about elements used in HTML. They're put in
+    the elements open tag.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    The main heading of a page. It should ony be used once.
+
+    5. Name two tags that have required attributes
+    img and a
+
+    6. What do we put in the head of our HTML document? 
+    Title of the page, character set, styles, links, scripts
+
+    7. What is an id? 
+    A unique name given to an element in html
+
+    8. What elements can I add an id to? 
+    All html elements in the body
+
+    9. How many times can I use the same id on a page? 
+    Once 
+
+    10. What is a class? 
+    An attribute that specifies one or more html elements.
+
+    11. What elements can I add a class to? 
+    All html elements in the body
+
+    12. How many times can I use the same class on a page? 
+    As many as needed
+
+    13. How do I get my link to open in a new tab?
+    target_blank
+
+    14. What is the alt attribute in the image tag used for? 
+    Providing a description of the image for screen readers, or for when the image can't load
+
+    15. How do I reference an id?
+    #(id name)
+
+    16. What is the difference between a section and a div
+    A section provides semantic meaning- anything in a section is grouped together and has a common theme. The same
+    is not necessarily true for a div
+
+    17. What is CSS used for? 
+    Providing style to your web page
+
+    18. How to we select an element? Example - every h2 on the page
+    You just put the name of the element followed by curly brackets. h2 {style rules}
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    You would use a class when you want to style more than one element in a similar way. You would give an element 
+    an id when you want to create a link to that element from somewhere else on the page.
+
+    20. How do we select classes in CSS?
+    .(name of class)
+
+    21. How do we select a p element with a single class of “human”?
+    p.human
+
+    22. What is a parent child selector? When would this be useful? 
+    div > p would select all p elements that are DIRECT children of a div element. It'd be useful if you wanted
+    to select only the p elements that are direct children of div elements, and not p elements that are further nested
+    inside the div (if there were any)
+
+    23. How do you select all links within a div with the class of sidebar?
+    div.sidebar a
+
+    24. What is a pseudo selector?
+    A way to specifically select elements in css- like if they're direct children of an element, or the 3rd child
+    of an element, or the only type of that element, etc.
+
+    25. What do we use the change the spacing between lines?
+    line-height
+
+    26. What do we use to change the spacing between letters?
+    letter-spacing
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    You'd put "text-transform" and then uppercase, lowercase, or capitalize
+
+    28. How do I add a 1px border around my div that is dotted and black?
+    border: dotted black 1px;
+
+    29. How do I select everything on the page? 
+    * {style rules}
+
+    30. How do I write a comment in CSS?
+    <!-- your comment -->
+
+    31. How do I find out what file I am in, when I am using the command line? 
+    pwd
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    rm   You have to be careful because it's permanent, and doesn't give you a warning
+
+    34. Why should I use version control? 
+    Because with version control you're able to go back and see your changes to more easily identify
+    where you made a mistake so you can fix it.
+
+    35. How often should I commit to github?
+    Whenever you finish a "step" in your code, or about every 20 minutes or so
+
+    36. What is the command we would use to push our repo up to github? 
+    git push -u origin branch-name
+
+    37. Walk me through Lambda's git flow. 
+    1. Create your own version of the repository by forking it.
+    2. Add the team leader as a collaborator on the forked repo.
+    3. Click on "clone or download" button so you can copy a link of the repo to put in your command line.
+    4  In the terminal command line, go into the directory you want to clone the forked repo. (git clone *link*)
+    5. Change directories (cd) to make sure you're in your repo by putting in cd *repo name*
+    6. Create your own branch name for the repo by putting git checkout -b 'firstname-lastname' into the command line
+    7. Start working on assignment
+    8. Every 20 minutes or so type in  git add .  in the command line, so your changes are ready to be committed
+    9. In the command line, enter  git commit -m "(A message explaining what you did)"
+    10. Push changes you made on the repo onto your repo on github by entering git push -u origin branch name  into 
+    the command line
+    11. Go to your forked repo on the github website, select your branch, and click on the "new pull request" button
+    12. On the "pull request page", make sure "base repository" is set to your forked repo instead of the original repo
+    13. Add your team leader to "reviewers" and submit the pull request
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    Block elements starts on a new line and take up the full width available. Inline elements don't start
+    on a new line and only take up as much room as necessary 
+
+    2. What happens when an element is positioned absolutely? 
+    It's taken out of the normal flow of the document, and is positioned relative to the nearest positioned element that comes 
+    before it.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    display: inline-block;
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    BLOCK- div, p, h1
+    INLINE- img, span, i 
+    INLINE BLOCK- button
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? -->
+    The box model is a set of layers that wrap around html elements. Each layer (padding, border, margin) can be adjusted in order to set the look and size of the element.
+    By default, when you set the width/height of an element the browser will add padding and border to the specified width/height. So sometimes the element will appear 
+    to be bigger than expected. You could add the box-sizing property to the element, with a value of border-box to make sure the width/height of the element is actually the one given.
